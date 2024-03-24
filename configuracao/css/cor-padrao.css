@@ -1,0 +1,13 @@
+:root {
+  --cor-primaria: #f66d00;
+  --cor-secundaria: #534e4e;
+  --cor-botao-acao: #f66d00;
+  --cor-fundo-header: #FFFFFF;
+  --cor-letra-menu: #534e4e;
+}
+#redes-sociais li div {
+  background-color: #FFFFFF;
+}
+#redes-sociais li div a:after {
+  color: var(--cor-primaria);
+}

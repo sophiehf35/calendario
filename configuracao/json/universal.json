@@ -1,0 +1,68 @@
+{
+  "id": 6542605653749031,
+  "nome_do_site": "Calendário",
+  "nome_do_logo": "logo-calendario",
+  "autor_padrao": "Calendário",
+  "dominio": "https://www.calendario.cnt.br",
+  "numero_artigos_pagina_home": 25,
+  "numero_artigos_pagina_categoria": 10,
+  "numero_ferramentas_pagina_categoria" : 10,
+  "permite_profissionais": 0,
+  "possui_ferramentas": 0,
+  "permite_logo_no_rodape": 0,
+  "tipo_home": "portal",
+  "numero_profissionais_por_pagina": 0,
+  "conteudo_destaque_pagina_categoria": 1,
+  "conteudo_destaque_pagina_artigo": 1,
+  "endereco_funcao_php": "https://gerenciador.linkasites.com.br/configuracao/php/funcoes/recebe-dados/",
+  "cdn_imagens": 1,
+  "diretorio_cdn_imagens": "https://ik.imagekit.io/calendario",
+  "botao_superior_direito": 0,
+  "exibe_categorias_de_artigos": 0,
+  "possui_google_analytics": 1,
+  "codigo_google_analytics": "G-KG0CZ1N9ZL",
+  "possui_google_adsense": 0,
+  "codigo_google_adsense": "",
+  "possui_clarity": 0,
+  "codigo_clarity": "",
+  "header": {
+    "fixo_em_todas_paginas": 1,
+    "fixo_em_algumas_paginas": 0
+  },
+  "js_customizado": {
+    "paginas_artigo": [],
+    "paginas_categoria": []
+  },
+  "paginas_fixas": {
+    "slugs": [
+      "home",
+      "fale-conosco",
+      "politica-de-privacidade",
+      "quem-somos"
+    ],
+    "meta_titulo_padrao": "| Calendário - Ferramentas e Artigos de Dias",
+    "meta_descricao_padrao": "Calendário | Ferramentas e Artigos → ✔️ Calculadora de Data ✔️ Feriados ✔️ Datas comemorativas ✔️ Contador de Prazo ✔️ Dia",
+    "home": {
+      "meta_titulo": "Calendário → Ferramentas e Artigos | Datas e Dias",
+      "meta_descricao": "Ferramentas e Artigos → ✔️ Calculadora de Data ✔️ Feriados ✔️ Datas comemorativas ✔️ Contador de Prazo ✔️ Dia ✔️ Novidades"
+    },
+    "datas-comemorativas": {
+      "meta_titulo": "Datas Comemorativas → Artigos Curiosidades Frases sobre Dias",
+      "meta_descricao": "Datas Comemorativas | Calendário dias ✔️ Datas ✔️ Feriados ✔️ Ponto Facultativo ✔️ Estadual ✔️ Municipal ✔️ Nacional ✔️ Dia de ✔️ Dia do"
+    },
+    "calendarios": {
+      "meta_titulo": "Calendários → Artigos e Curiosidades sobre Calendários",
+      "meta_descricao": "Calendários | Calendário história ✔️ Início ✔️ Como funciona ✔️ Como surgiu ✔️ Origem do calendário ✔️ Solar ✔️ Gregoriano ✔️ Meses ✔️ Anos"
+    },
+    "ferramentas": {
+      "meta_titulo": "Ferramentas gratuitas | Confira ferramentas online e gratuitas",
+      "meta_descricao": "Ferramentas gratuitas ✔️ contar dias de vida ✔️ contador de dias corridos ✔️ contador de dias úteis ✔️ calculadora de prazo ✔️ contagem de dias"
+    }
+  },
+  "paginas_categorias": {
+    "slugs": [
+      "datas-comemorativas",
+      "calendarios"
+    ]
+  }
+}
