@@ -200,11 +200,11 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
 
     //RECUPERA E SETA OS PARÂMETROS
     var dataNascimento = urlParams.get('data_nascimento');
-    var dataFinal = urlParams.get('data_final');
+    var dataAtual = urlParams.get('data_atual');
     
     //TRATA DATA PARA FORMATO UNIVERSAL
     var dataNascimentoUniversal = dataNascimento.substring(0, 10).split('/').reverse().join('-');
-    var dataAtualUniversal = dataFinal.substring(0, 10).split('/').reverse().join('-');
+    var dataAtualUniversal = dataAtual.substring(0, 10).split('/').reverse().join('-');
 
     var intervalo = calculaIntervalo(dataNascimentoUniversal, dataAtualUniversal);
 
