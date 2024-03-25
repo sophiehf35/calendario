@@ -109,12 +109,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 divBarraContador.classList.add("d-block", "fade", "show");
                 
                 criaBarraProgresso(1350);
-                enviaDados('');
+                enviaDados();
 
-                function enviaDados(feriados_e_facultativosString) {
+                function enviaDados() {
                     setTimeout(function () {
-                        var parametro_feriados_e_facultativos = feriados_e_facultativosString !== '' ? `&feriados_e_facultativos=${encodeURIComponent(feriados_e_facultativosString)}` : '';
-                        var parametros = `?data_inicial=${encodeURIComponent(inputDataNascimento.value)}&data_final=${encodeURIComponent(inputDataFinal.value)}&incluir_dia_inicial=${encodeURIComponent(inputIncluirDiaInicial.checked)}&incluir_feriados_e_facultativos=${encodeURIComponent(inputIncluirFeriadoseFacultativos.checked)}${parametro_feriados_e_facultativos}`;
+                        var parametros = `?data_nascimento=${encodeURIComponent(inputDataNascimento.value)}&data_atual=${encodeURIComponent(dataAtual)}`;
                         window.location.href = window.location.pathname + parametros;
                     }, 1200);
                 }
