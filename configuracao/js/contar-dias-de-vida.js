@@ -170,7 +170,7 @@ function calculaIntervalo(dataNascimentoStr, dataAtualStr) {
     var conteudoTabela = '';
 
     //CALCULA OS DIAS CORRIDOS
-    var dias = Math.floor((dataNascimento - dataAtual) / (1000 * 60 * 60 * 24));
+    var dias = Math.floor((dataAtual - dataNascimento) / (1000 * 60 * 60 * 24));
     var anos = dataAtual.getFullYear() - dataNascimento.getFullYear();
 
     // Verifica se ainda não completou o aniversário deste ano
@@ -207,7 +207,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
     var dias = intervalo.dias;
     var anos = intervalo.anos;
     var meses = intervalo.meses;
-    var semanas = Math.floor(intervalo.diasCorridos / 7);
+    var semanas = Math.floor(intervalo.dias / 7);
 
     var todasAsSecoes = document.querySelectorAll('section');
     todasAsSecoes.forEach(function(secao) {
