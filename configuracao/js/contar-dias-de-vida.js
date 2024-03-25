@@ -254,7 +254,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                     <div class="card-content">
                         <div class="card-body">
                             <h2 class="titulo_item_contador">${semanas !== 0 ? String(semanas).padStart(2, '0') : 'Nenhuma'}</h2>
-                            <span class="descricao_item_contador">${semanas >= 2 ? 'Semanas' : 'Semana'}${semanas !== 0 ? (diasCorridos % 7 !== 0 ? (diasCorridos % 7 >= 2 ? ' e ' + (diasCorridos % 7) + ' dias' : ' e ' + (diasCorridos % 7) + ' dia') : '') : ''}</span>
+                            <span class="descricao_item_contador">${semanas >= 2 ? 'Semanas' : 'Semana'}${semanas !== 0 ? (dias % 7 !== 0 ? (dias % 7 >= 2 ? ' e ' + (dias % 7) + ' dias' : ' e ' + (dias % 7) + ' dia') : '') : ''}</span>
                         </div>
                     </div>
                     </div>
