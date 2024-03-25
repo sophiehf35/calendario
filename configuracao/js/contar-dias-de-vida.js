@@ -193,7 +193,7 @@ function calculaIntervalo(dataNascimentoStr, dataAtualStr) {
     }
 
     //CALCULA OS DIAS CORRIDOS
-    var diasCorridos = Math.floor((dataAtual - dataNascimento) / (1000 * 60 * 60 * 24));
+    var diasCorridos = Math.floor((dataNascimento - dataAtual) / (1000 * 60 * 60 * 24));
 
     var tabela = `<div style="padding-bottom: 25px;" class="container"><div><table style="margin-top:0px;" class="table tabela-customizada table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"><thead style="background-color: var(--cor-primaria); color: #FFF;"><tr><th>DATA</th><th>NOME</th><th>TIPO</th></tr></thead><tbody>${conteudoTabela}</tbody></table></div></div>`;
 
