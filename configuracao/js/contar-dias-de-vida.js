@@ -201,13 +201,6 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
     //RECUPERA E SETA OS PARÂMETROS
     var dataNascimento = urlParams.get('data_nascimento');
     var dataFinal = urlParams.get('data_final');
-    var feriados_e_facultativosArray = [];
-    
-    //RECUPERA OS FERIADOS E FACULTATIVOS DA URL CASO ESTEJA SOLICITADO PARA INCLUIR
-    if(incluirFeriadoseFacultativos === 'true') {
-        var feriados_e_facultativos = urlParams.get('feriados_e_facultativos');
-        feriados_e_facultativosArray = JSON.parse(decodeURIComponent(feriados_e_facultativos));
-    }
     
     //TRATA DATA PARA FORMATO UNIVERSAL
     var dataNascimentoUniversal = dataNascimento.substring(0, 10).split('/').reverse().join('-');
