@@ -170,6 +170,7 @@ function calculaIntervalo(dataNascimentoStr, dataAtualStr) {
     var conteudoTabela = '';
 
     // Loop através dos dias entre as datas
+    /*
     while (dataNascimento <= dataAtual) {
 
         if ((dataAtual.toDateString() !== dataNascimento.toDateString() && dataNascimento.getDay() !== 5 && dataNascimento.getDay() !== 6)) {
@@ -178,6 +179,17 @@ function calculaIntervalo(dataNascimentoStr, dataAtualStr) {
 
         // Avança para o próximo dia
         dataAtual.setDate(dataAtual.getDate() + 1);
+    }
+    */
+
+    while (dataNascimento <= dataAtual) {
+        // Verifica se o dia é útil (não é sábado ou domingo)
+        if (dataNascimento.getDay() !== 0 && dataNascimento.getDay() !== 6) {
+            diasUteis++;
+        }
+
+        // Avança para o próximo dia
+        dataNascimento.setDate(dataNascimento.getDate() + 1);
     }
 
     //CALCULA OS DIAS CORRIDOS
