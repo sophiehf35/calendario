@@ -169,38 +169,22 @@ function calculaIntervalo(dataNascimentoStr, dataAtualStr) {
     var diasUteis = 0;
     var conteudoTabela = '';
 
-    // Loop através dos dias entre as datas
-    /*
-    while (dataNascimento <= dataAtual) {
-
-        if ((dataAtual.toDateString() !== dataNascimento.toDateString() && dataNascimento.getDay() !== 5 && dataNascimento.getDay() !== 6)) {
-            diasUteis++;
-        }
-
-        // Avança para o próximo dia
-        dataAtual.setDate(dataAtual.getDate() + 1);
-    }
-    */
-
-    while (dataNascimento <= dataAtual) {
-        // Verifica se o dia é útil (não é sábado ou domingo)
-        if (dataNascimento.getDay() !== 0 && dataNascimento.getDay() !== 6) {
-            diasUteis++;
-        }
-
-        // Avança para o próximo dia
-        dataNascimento.setDate(dataNascimento.getDate() + 1);
-    }
-
     //CALCULA OS DIAS CORRIDOS
-    var diasCorridos = Math.floor((dataNascimento - dataAtual) / (1000 * 60 * 60 * 24));
+    var dias = Math.floor((dataNascimento - dataAtual) / (1000 * 60 * 60 * 24));
+    var anos = dataAtual.getFullYear() - dataNascimento.getFullYear();
+
+    // Verifica se ainda não completou o aniversário deste ano
+    if (dataAtual.getMonth() < dataNascimento.getMonth() || 
+        (dataAtual.getMonth() === dataNascimento.getMonth() && dataAtual.getDate() < dataNascimento.getDate())) {
+        anos--;
+    }
 
     var tabela = `<div style="padding-bottom: 25px;" class="container"><div><table style="margin-top:0px;" class="table tabela-customizada table-striped table-bordered dt-responsive nowrap dataTable no-footer dtr-inline"><thead style="background-color: var(--cor-primaria); color: #FFF;"><tr><th>DATA</th><th>NOME</th><th>TIPO</th></tr></thead><tbody>${conteudoTabela}</tbody></table></div></div>`;
 
     return {
-        diasCorridos: diasCorridos,
-        diasUteis: diasUteis,
+        dias: dias,
         meses: calculaMeses(dataNascimento, dataAtual),
+        anos: anos,
         sectionTabela: conteudoTabela !== '' ? tabela : ''
     };
 }
@@ -220,8 +204,8 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
 
     var intervalo = calculaIntervalo(dataNascimentoUniversal, dataAtualUniversal);
 
-    var diasUteis = intervalo.diasUteis;
-    var diasCorridos = intervalo.diasCorridos;
+    var dias = intervalo.dias;
+    var anos = intervalo.anos;
     var meses = intervalo.meses;
     var semanas = Math.floor(intervalo.diasCorridos / 7);
 
@@ -259,18 +243,8 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                     <div class="card">
                     <div class="card-content">
                         <div class="card-body">
-                            <h2 class="titulo_item_contador">${diasUteis !== 0 ? String(diasUteis).padStart(2, '0') : '0'}</h2>
-                            <span class="descricao_item_contador">${diasUteis >= 2 ? 'Dias úteis' : 'Dia útil'}</span>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-sm-6 col-6">
-                    <div class="card">
-                    <div class="card-content">
-                        <div class="card-body">
-                            <h2 class="titulo_item_contador">${diasCorridos !== 0 ? String(diasCorridos).padStart(2, '0') : '0'}</h2>
-                            <span class="descricao_item_contador">${diasCorridos >= 2 ? 'Dias corridos' : 'Dia corrido'}</span>
+                            <h2 class="titulo_item_contador">${dias !== 0 ? String(dias).padStart(2, '0') : '0'}</h2>
+                            <span class="descricao_item_contador">${dias >= 2 ? 'Dias' : 'Dia'}</span>
                         </div>
                     </div>
                     </div>
@@ -291,6 +265,16 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                         <div class="card-body">
                             <h2 class="titulo_item_contador">${meses !== 0 ? String(meses).padStart(2, '0') : 'Nenhum'}</h2>
                             <span class="descricao_item_contador">${meses >= 2 ? 'Meses' : 'Mês'}</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm-6 col-6">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="card-body">
+                            <h2 class="titulo_item_contador">${anos !== 0 ? String(anos).padStart(2, '0') : '0'}</h2>
+                            <span class="descricao_item_contador">${anos >= 2 ? 'Anos' : 'Ano'}</span>
                         </div>
                     </div>
                     </div>
