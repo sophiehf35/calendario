@@ -229,8 +229,8 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                    <label class="label"><b style="font-weight:600">DATA INICIAL</b></label>
-                    <input style="font-size: 1.5rem;" type="text" value="${dataNascimento}" class="form-control add__date-one" id="data_inicial" readonly="readonly">
+                    <label class="label"><b style="font-weight:600">DATA DE NASCIMENTO</b></label>
+                    <input style="font-size: 1.5rem;" type="text" value="${dataNascimento}" class="form-control add__date-one" id="data_nascimento" readonly="readonly">
                     </div>
                 </div>
                 <div class="col-md-6 mt-3 mt-md-4">
