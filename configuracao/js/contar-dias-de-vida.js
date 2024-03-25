@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById("data_nascimento").addEventListener("focusout", function() {
-        var dataFinal = document.getElementById("data_final");
-        if (dataFinal.value == "__/__/____") {
-            dataFinal.value = "";
-            var dataFinalExtensa = document.getElementById("data_nascimento_extensa");
-            if (dataFinalExtensa) {
-                dataFinalExtensa.remove();
+        var dataNascimento = document.getElementById("data_nascimento");
+        if (dataNascimento.value == "__/__/____") {
+            dataNascimento.value = "";
+            var dataNascimentoExtensa = document.getElementById("data_nascimento_extensa");
+            if (dataNascimentoExtensa) {
+                dataNascimentoExtensa.remove();
             }
         }
     });
