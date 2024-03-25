@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
 
             // Converta a data para o formato ISO (yyyy-mm-dd)
-            var dataAtual = new Date();
+            var dataAtual = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(new Date());
             var dataNascimento = new Date(inputDataNascimento.value.split('/').reverse().join('-'));
 
             //CALCULA O INTERVALO
