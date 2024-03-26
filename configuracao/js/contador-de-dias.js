@@ -338,8 +338,22 @@ document.addEventListener('DOMContentLoaded', function() {
         ocultaNotificacao(verificaTipoAlerta(divNotificacaoContador), inputDataInicial, divNotificacaoContador);
     });
 
+    inputDataInicial.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            botaoCalcularDias.click();
+        }
+    });
+
     inputDataFinal.addEventListener("focus", function() {
         ocultaNotificacao(verificaTipoAlerta(divNotificacaoContador), inputDataFinal, divNotificacaoContador);
+    });
+
+    inputDataFinal.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            botaoCalcularDias.click();
+        }
     });
 
 function calculaMeses(dataInicial,dataFinal, roundUpFractionalMonths) {

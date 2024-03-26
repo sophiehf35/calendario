@@ -126,15 +126,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
+    inputDataNascimento.addEventListener("focus", function() {
+        ocultaNotificacao(verificaTipoAlerta(divNotificacaoContador), inputDataNascimento, divNotificacaoContador);
+    });
+
     inputDataNascimento.addEventListener("keypress", function(event) {
         if (event.key === "Enter") {
             event.preventDefault();
             botaoCalcularIdade.click();
         }
-    });
-
-    inputDataNascimento.addEventListener("focus", function() {
-        ocultaNotificacao(verificaTipoAlerta(divNotificacaoContador), inputDataNascimento, divNotificacaoContador);
     });
 
 function calculaMeses(dataNascimento, dataAtual, roundUpFractionalMonths) {
