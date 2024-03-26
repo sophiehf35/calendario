@@ -126,6 +126,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     });
 
+    inputDataNascimento.addEventListener("keypress", function(event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            botaoCalcularIdade.click();
+        }
+    });
+
     inputDataNascimento.addEventListener("focus", function() {
         ocultaNotificacao(verificaTipoAlerta(divNotificacaoContador), inputDataNascimento, divNotificacaoContador);
     });
