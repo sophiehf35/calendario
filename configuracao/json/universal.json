@@ -8,7 +8,7 @@
   "numero_artigos_pagina_categoria": 10,
   "numero_ferramentas_pagina_categoria" : 10,
   "permite_profissionais": 0,
-  "possui_ferramentas": 0,
+  "possui_ferramentas": 1,
   "permite_logo_no_rodape": 0,
   "tipo_home": "portal",
   "numero_profissionais_por_pagina": 0,
