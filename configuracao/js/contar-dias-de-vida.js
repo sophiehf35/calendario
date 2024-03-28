@@ -246,7 +246,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
     var sectionResultado = `<section id="resultado">
         <div class="container-xl pb-4">
             <div class="row">
-                <div class="col-xl-6 col-sm-6 col-6">
+                <div class="col-6">
                     <div class="card">
                     <div class="card-content">
                         <div class="card-body">
@@ -256,7 +256,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                     </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-sm-6 col-12">
+                <div class="col-6">
                     <div class="card">
                     <div class="card-content">
                         <div class="card-body">
@@ -266,7 +266,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                     </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-sm-6 col-12">
+                <div class="col-6">
                     <div class="card">
                     <div class="card-content">
                         <div class="card-body">
@@ -276,7 +276,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                     </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-sm-6 col-6">
+                <div class="col-6">
                     <div class="card">
                     <div class="card-content">
                         <div class="card-body">
