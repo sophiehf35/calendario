@@ -237,7 +237,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                     </div>
                 </div>
                 <div class="col-md-6 mt-3 mt-md-4">
-                    <a href="/ferramentas/contador-de-dias-de-vida-calcular-idade" class="align-middle"><button style="width:100%;" class="btn_1 full-width fe-pulse" type="button">FAZER NOVO CÁLCULO</button></a>
+                    <a href="/ferramentas/calcular-idade-na-calculadora-de-idade" class="align-middle"><button style="width:100%;" class="btn_1 full-width fe-pulse" type="button">FAZER NOVO CÁLCULO</button></a>
                 </div>
             </div>
         </div>
