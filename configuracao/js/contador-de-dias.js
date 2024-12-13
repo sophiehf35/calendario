@@ -581,7 +581,7 @@ if (urlParams.has('data_inicial') && urlParams.has('data_final') && urlParams.ha
                     <div class="col-xl-6 col-sm-6 col-6">
                         <div class="card">
                             <div class="card-content">
-                                <div class="card-body">
+                                <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                                     <h2 class="titulo_item_contador">${feriados !== 0 ? String(feriados).padStart(2, '0') : 'Nenhum'}</h2>
                                     <span class="descricao_item_contador">${feriados >= 2 ? 'Feriados' : 'Feriado'}</span>
                                 </div>
@@ -591,7 +591,7 @@ if (urlParams.has('data_inicial') && urlParams.has('data_final') && urlParams.ha
                     <div class="col-xl-6 col-sm-6 col-6">
                         <div class="card">
                             <div class="card-content">
-                                <div class="card-body">
+                                <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                                     <h2 class="titulo_item_contador">${facultativos !== 0 ? String(facultativos).padStart(2, '0') : 'Nenhum'}</h2>
                                     <span class="descricao_item_contador">${facultativos >= 2 ? 'Facultativos' : 'Facultativo'}</span>
                                 </div>
