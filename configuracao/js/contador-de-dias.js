@@ -513,7 +513,7 @@ if (urlParams.has('data_inicial') && urlParams.has('data_final') && urlParams.ha
     var divAcaoContador = document.getElementById('div_acao_contador');
 
     divAcaoContador.innerHTML = `<div class="box_account">
-        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 25px;">
+        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 20px;">
             <div class="row">
                 <div class="col-md-4">
                     <div class="form-group">
