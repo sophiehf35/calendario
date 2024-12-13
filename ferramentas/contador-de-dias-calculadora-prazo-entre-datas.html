@@ -106,49 +106,49 @@
                   <div class="row">
                      <div id="div_acao_contador" class="col-md-12 mb-12">
                         <div class="box_account">
-                           <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 25px;">
+                           <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 20px;">
                               <div class="main_title_3">
                                  <h2>Contador de dias entre datas</h2>
                                  <p style="text-align: justify;">Para utilizar o contador de dias entre datas é simples e fácil, uma vez que só é necessário inserir a <strong>data inicial</strong> e a <strong>data final</strong> e depois disso, pressionar o botão calcular prazo, em instantes será feito o calculo entre os dias!</p>
                               </div>
                               <form id="formulario-contador-de-dias">
-                                    <div style="margin-bottom:20px;" class="private box">
-                                       <div class="row mb-2">
-                                          <div class="col-lg-6 col-12">
-                                             <label for="data_inicial">DATA INICIAL</label>
-                                             <div class="input-group mb-2">
-                                                <input style="font-size: 1.3rem; height: unset;" type="tel" class="form-control calendario data" id="data_inicial" name="data_inicial" autocomplete="off" aria-label="Data Inicial" aria-describedby="abrir_calendario_data_inicial" placeholder="__/__/____">
-                                                <button class="btn btn-outline-secondary" type="button" id="abrir_calendario_data_inicial" style="border: 1px solid #d2d8dd; height: unset; padding: 12px 15px;">Usar calendário</button>
-                                             </div>
-                                             <div class="mb-2" style="margin-top: 0px;" id="descricao_data_inicial"></div>
+                                 <div style="margin-bottom:20px;" class="private box">
+                                    <div class="row mb-2">
+                                       <div class="col-lg-6 col-12">
+                                          <label for="data_inicial">DATA INICIAL</label>
+                                          <div class="input-group mb-2">
+                                             <input style="font-size: 1.3rem; height: unset;" type="tel" class="form-control calendario data" id="data_inicial" name="data_inicial" autocomplete="off" aria-label="Data Inicial" aria-describedby="abrir_calendario_data_inicial" placeholder="__/__/____">
+                                             <button class="btn btn-outline-secondary" type="button" id="abrir_calendario_data_inicial" style="border: 1px solid #d2d8dd; height: unset; padding: 12px 15px;">Usar calendário</button>
                                           </div>
-                                          <div class="col-lg-6 col-12">
-                                             <label for="data_final">DATA FINAL</label>
-                                             <div class="input-group mb-2">
-                                                <input style="font-size: 1.23rem; height: unset;" type="tel" class="form-control calendario data" id="data_final" name="data_final" autocomplete="off" aria-label="Data Final" aria-describedby="abrir_calendario_data_final" placeholder="__/__/____">
-                                                <button class="btn btn-outline-secondary" type="button" id="abrir_calendario_data_final" style="border: 1px solid #d2d8dd; height: unset; padding: 12px 15px;">Usar calendário</button>
-                                             </div>
-                                             <div class="mb-2" style="margin-top: 0px;" id="descricao_data_final"></div>
+                                          <div class="mb-2" style="margin-top: 0px;" id="descricao_data_inicial"></div>
+                                       </div>
+                                       <div class="col-lg-6 col-12">
+                                          <label for="data_final">DATA FINAL</label>
+                                          <div class="input-group mb-2">
+                                             <input style="font-size: 1.23rem; height: unset;" type="tel" class="form-control calendario data" id="data_final" name="data_final" autocomplete="off" aria-label="Data Final" aria-describedby="abrir_calendario_data_final" placeholder="__/__/____">
+                                             <button class="btn btn-outline-secondary" type="button" id="abrir_calendario_data_final" style="border: 1px solid #d2d8dd; height: unset; padding: 12px 15px;">Usar calendário</button>
+                                          </div>
+                                          <div class="mb-2" style="margin-top: 0px;" id="descricao_data_final"></div>
+                                       </div>
+                                    </div>
+                                    <div class="row">
+                                       <div class="col-12">
+                                          <div class="form-check form-switch">
+                                             <input id="incluir_dia_inicial" name="incluir_dia_inicial" class="form-check-input" style="width: 3em; height:1.5em; margin-right: 10px;" type="checkbox" role="switch" checked>
+                                             <label class="form-check-label mt-1" for="incluir_dia_inicial">Incluir o dia inicial na contagem</label>
                                           </div>
                                        </div>
-                                       <div class="row">
-                                          <div class="col-lg-6 col-12">
-                                             <div class="form-check form-switch">
-                                                <input id="incluir_dia_inicial" name="incluir_dia_inicial" class="form-check-input" style="width: 3em; height:1.5em; margin-right: 10px;" type="checkbox" role="switch" checked>
-                                                <label class="form-check-label mt-1" for="incluir_dia_inicial">Incluir o dia inicial na contagem</label>
-                                             </div>
-                                          </div>
-                                          <div class="col-lg-6 col-12">
-                                             <div class="form-check form-switch">
-                                                <input id="incluir_feriados_e_facultativos" name="incluir_feriados_e_facultativos" class="form-check-input" style="width: 3em; height:1.5em; margin-right: 10px;" type="checkbox" role="switch" checked>
-                                                <label class="form-check-label mt-1" for="incluir_feriados_e_facultativos">Incluir feriados e pontos facultativos</label>
-                                             </div>
+                                       <div class="col-12">
+                                          <div class="form-check form-switch">
+                                             <input id="incluir_feriados_e_facultativos" name="incluir_feriados_e_facultativos" class="form-check-input" style="width: 3em; height:1.5em; margin-right: 10px;" type="checkbox" role="switch" checked>
+                                             <label class="form-check-label mt-1" for="incluir_feriados_e_facultativos">Incluir feriados e pontos facultativos</label>
                                           </div>
                                        </div>
                                     </div>
-                                    <button id="calcular_dias" style="width:100%; margin-top: 10px;" class="btn_1 full-width fe-pulse" type="button">CALCULAR PRAZO</button>
-                                    <div id="div_notificacao_contador" class="col-12 d-none pt-2"></div>
-                                    <div id="div_barra_contador" class="col-12 d-none pt-2"></div>
+                                 </div>
+                                 <button id="calcular_dias" style="width:100%; margin-top: 10px;" class="btn_1 full-width fe-pulse" type="button">CALCULAR PRAZO</button>
+                                 <div id="div_notificacao_contador" class="col-12 d-none pt-2"></div>
+                                 <div id="div_barra_contador" class="col-12 d-none pt-2"></div>
                               </form>
                            </div>
                         </div>
@@ -192,10 +192,10 @@
                   <div class="row">
                      <div class="col-md-12 mb-12">
                         <div class="box_account">
-                           <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 25px;">
+                           <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 20px;">
                               <div class="main_title_2">
                                  <span><em></em></span>
-                                 <h2 style="font-size: 2rem;">Detalhes da calculadora de prazos</h2>
+                                 <h2>Detalhes da calculadora de prazos</h2>
                                  <p style="font-size: 1.025rem; margin-top:5px">Abaixo será descrito alguns detalhes sobre a calculadora de prazos.</p>
                               </div>
                               <div class="row">
@@ -223,10 +223,10 @@
                   <div class="row">
                      <div class="col-md-12 mb-12">
                         <div class="box_account">
-                           <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 25px;">
+                           <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 20px;">
                               <div class="main_title_2">
                                  <span><em></em></span>
-                                 <h2 style="font-size: 2rem;">Contar Dias</h2>
+                                 <h2>Contar Dias</h2>
                                  <p style="font-size: 1.025rem; margin-top:5px">A tarefa de contar dias não precisa mais ser algo chato e cansativo, utilize nossa ferramenta online e otimize seu desempenho!</p>
                               </div>
                               <div class="row">
@@ -252,10 +252,10 @@
             <section class="bg_color_1">
                <div class="container-xl pb-4">
                   <div class="box_account">
-                     <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 25px;">
+                     <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 20px;">
                         <div class="main_title_2">
                            <span><em></em></span>
-                           <h2 style="font-size: 2rem;">Perguntas Frequentes</h2>
+                           <h2>Perguntas Frequentes</h2>
                            <p style="font-size: 1.025rem; margin-top:5px">Confira abaixo algumas perguntas sobre o contador de dias.</p>
                         </div>
                         <div itemscope="" itemtype="https://schema.org/FAQPage" class="row">
@@ -312,7 +312,7 @@
                            <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%); background-color: #fff; padding: 25px;">
                               <div class="main_title_2">
                                  <span><em></em></span>
-                                 <h2 style="font-size: 2rem;">Etapas para utilizar o contador</h2>
+                                 <h2>Etapas para utilizar o contador</h2>
                                  <p style="font-size: 1.025rem; margin-top:5px">Na seção abaixo será explicado de forma detalhada como realizar a contagem de dias.</p>
                               </div>
                               <div class="row">
