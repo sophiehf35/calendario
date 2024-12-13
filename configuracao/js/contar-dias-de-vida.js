@@ -249,7 +249,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                 <div class="col-6">
                     <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
+                        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                             <h2 class="titulo_item_contador">${dias !== 0 ? String(dias).padStart(2, '0') : '0'}</h2>
                             <span class="descricao_item_contador">${dias >= 2 ? 'Dias' : 'Dia'}</span>
                         </div>
@@ -259,7 +259,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                 <div class="col-6">
                     <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
+                        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                             <h2 class="titulo_item_contador">${semanas !== 0 ? String(semanas).padStart(2, '0') : 'Nenhuma'}</h2>
                             <span class="descricao_item_contador">${semanas >= 2 ? 'Semanas' : 'Semana'}${semanas !== 0 ? (dias % 7 !== 0 ? (dias % 7 >= 2 ? ' e ' + (dias % 7) + ' dias' : ' e ' + (dias % 7) + ' dia') : '') : ''}</span>
                         </div>
@@ -269,7 +269,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                 <div class="col-6">
                     <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
+                        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                             <h2 class="titulo_item_contador">${meses !== 0 ? String(meses).padStart(2, '0') : 'Nenhum'}</h2>
                             <span class="descricao_item_contador">${meses >= 2 ? 'Meses' : 'Mês'}</span>
                         </div>
@@ -279,7 +279,7 @@ if (urlParams.has('data_nascimento') && urlParams.has('data_atual')) {
                 <div class="col-6">
                     <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
+                        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                             <h2 class="titulo_item_contador">${anos !== 0 ? String(anos).padStart(2, '0') : '0'}</h2>
                             <span class="descricao_item_contador">${anos >= 2 ? 'Anos' : 'Ano'}</span>
                         </div>

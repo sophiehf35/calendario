@@ -540,7 +540,7 @@ if (urlParams.has('data_inicial') && urlParams.has('data_final') && urlParams.ha
                 <div class="col-xl-6 col-sm-6 col-6">
                     <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
+                        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                             <h2 class="titulo_item_contador">${diasUteis !== 0 ? String(diasUteis).padStart(2, '0') : '0'}</h2>
                             <span class="descricao_item_contador">${diasUteis >= 2 ? 'Dias úteis' : 'Dia útil'}</span>
                         </div>
@@ -550,7 +550,7 @@ if (urlParams.has('data_inicial') && urlParams.has('data_final') && urlParams.ha
                 <div class="col-xl-6 col-sm-6 col-6">
                     <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
+                        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                             <h2 class="titulo_item_contador">${diasCorridos !== 0 ? String(diasCorridos).padStart(2, '0') : '0'}</h2>
                             <span class="descricao_item_contador">${diasCorridos >= 2 ? 'Dias corridos' : 'Dia corrido'}</span>
                         </div>
@@ -560,7 +560,7 @@ if (urlParams.has('data_inicial') && urlParams.has('data_final') && urlParams.ha
                 <div class="col-xl-6 col-sm-6 col-12">
                     <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
+                        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                             <h2 class="titulo_item_contador">${semanas !== 0 ? String(semanas).padStart(2, '0') : 'Nenhuma'}</h2>
                             <span class="descricao_item_contador">${semanas >= 2 ? 'Semanas' : 'Semana'}${semanas !== 0 ? (diasCorridos % 7 !== 0 ? (diasCorridos % 7 >= 2 ? ' e ' + (diasCorridos % 7) + ' dias' : ' e ' + (diasCorridos % 7) + ' dia') : '') : ''}</span>
                         </div>
@@ -570,7 +570,7 @@ if (urlParams.has('data_inicial') && urlParams.has('data_final') && urlParams.ha
                 <div class="col-xl-6 col-sm-6 col-12">
                     <div class="card">
                     <div class="card-content">
-                        <div class="card-body">
+                        <div style="box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 10%);" class="card-body">
                             <h2 class="titulo_item_contador">${meses !== 0 ? String(meses).padStart(2, '0') : 'Nenhum'}</h2>
                             <span class="descricao_item_contador">${meses >= 2 ? 'Meses' : 'Mês'}</span>
                         </div>
