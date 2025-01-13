@@ -4,6 +4,7 @@
   "nome_do_logo": "logo-calendario",
   "autor_padrao": "Calendário",
   "dominio": "https://www.calendario.cnt.br",
+  "diretorio_blog": "home",
   "numero_artigos_pagina_home": 25,
   "numero_artigos_pagina_categoria": 10,
   "numero_ferramentas_pagina_categoria" : 10,
