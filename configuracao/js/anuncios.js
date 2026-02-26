@@ -6,7 +6,8 @@ window.addEventListener("DOMContentLoaded", function() {
 
         inserirAnuncio('anuncioDiv1_desktop', '7ae65acda698d7ecb357e633aaa82c88', 60, 468, 'https://www.highperformanceformat.com/7ae65acda698d7ecb357e633aaa82c88/invoke.js');
         inserirAnuncio('anuncioDiv1_mobile', '4f433edac6414ab49b9156bbab351cf5', 250, 300, 'https://www.highperformanceformat.com/4f433edac6414ab49b9156bbab351cf5/invoke.js');
-        inserirAnuncio('anuncioDiv2', '4f433edac6414ab49b9156bbab351cf5', 250, 300, 'https://www.highperformanceformat.com/4f433edac6414ab49b9156bbab351cf5/invoke.js');
+        inserirAnuncio('anuncioDiv2_desktop', '4f433edac6414ab49b9156bbab351cf5', 250, 300, 'https://www.highperformanceformat.com/4f433edac6414ab49b9156bbab351cf5/invoke.js');
+        inserirAnuncio('anuncioDiv2_mobile', '814fa0e04ee22143d7b1fb072a826fc2', 300, 160, 'https://www.highperformanceformat.com/814fa0e04ee22143d7b1fb072a826fc2/invoke.js');
         inserirAnuncio('anuncioDiv3', '814fa0e04ee22143d7b1fb072a826fc2', 300, 160, 'https://www.highperformanceformat.com/814fa0e04ee22143d7b1fb072a826fc2/invoke.js');
     
     } else if (document.querySelector('h1').dataset.tipoPagina === 'home' || document.querySelector('h1').dataset.tipoPagina === 'loterica-mais-proxima') {
